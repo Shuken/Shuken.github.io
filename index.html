@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Pol Marti Cañizares</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+ <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery_cycle.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: (target.offset().top-120)
+			}, 800);
+			return false;
+		  }
+		}
+	  });
+	});
+</script>
+ </head>
+<body>
+
+<div id="fixedpart">
+	<div id="topbar">
+		<br>
+		<br>
+	</div>
+		
+	<header>
+		<h1 class="hedtit">POL MARTI CAÑIZARES</h1>		
+		<nav>
+		<ul>
+		  <li><a href="#home">About</a></li>
+		  <li>|</li>
+		  <li><a href="#cv">CV</a></li>
+		  <li>|</li>
+		  <li><a href="#games">Games</a></li>
+		  <li>|</li>
+		  <li><a href="#publications">Publications</a></li>
+		  <li>|</li>
+		  <li><a href="#contact" >Contact</a></li>
+		</ul>
+	  </nav>
+
+	</header>
+</div>
+<br><br><br><br><br><br>
+
+<script> 
+$('a.smooth').live('click', function(e) {  
+    var $link = $(this);  
+    var anchor  = $link.attr('href');  
+    $('html, body').stop().animate({  
+        scrollTop: $(anchor).offset().top
+    }, 1000);  
+});  
+</script>
+
+<section class="home" id="home">
+	<div id="middle">
+		<div class="titolgran">ABOUT</div>
+		<br><br>
+		<div id="wrapprepho">
+			<div id="presentation">
+			Hey!
+			<br><br>
+			Welcome to my personal webpage here at PolMartiCanizares.com. This is where you can find all the information you need about my games, publications and work.
+			<br><br>
+			On the internet I am known as <i>Shuken</i> as it has been my nickname in practically all webpages and games. Officially, I am a:
+			<ul>
+			<li>Telecommunication engineer</li>
+			<li>Licenciate in Mathematics</li>
+			</ul>
+			but, of course, life is more than the things you have studied, so I also consider myself a:
+			<ul>
+			<li>Game developer</li>
+			<li>Graphics programmer</li>
+			<li>3D artist</li>
+			<li>Gamer</li>
+			</ul>
+			If you have arrived at this point is because you seem interested in me or my work, so I encourage you to look in the other sections
+			of this website and obtain more information. If you have any questions please <a href="#contact" id="link"><b>contact</b></a> me. 
+			</div>
+			<div id="photowrap">
+			<img src="Foto1.jpg" id="photo1" width="216" height="162">
+			<img src="Foto4.jpg" id="photo2" width="216" height="162">
+			<img src="Foto31.jpg" id="photo3" width="216" height="162">
+			<img src="Foto2.jpg" id="photo4" width="216" height="162">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cv" id="cv">
+	<div id="middle">
+	<h1 class="titolgran" >CURRICULUM VITAE</h1>
+	<br><br>
+	<div class="cvleft">EXTENDED<div id="circle"><a href="resumePol.pdf"><img class="cvdoc" src="document2.png"></img></a></div></div>
+	<div class="cvmidl"><br></div>
+	<div class="cvmidr"><br></div>
+	<div class="cvright">ONLINE<div id="circle"><a href="http://linkedin.com/pub/pol-martí-cañizares/2b/986/412"><img class="cvin" src="linkedin.png"></a></div></div>
+	</div>
+</section>
+
+
+<section class="games" id="games">
+	<div id="middle">
+	<h1 class="titolgran">GAMES</h1>
+	<br><br>
+	<div id="wrapall">
+	<div id="introwrap">
+		<img class="imgtitle" src="game_tit2.png"></img>
+		<p class="intro"> <i><b>Cirurgia 3D</b></i> is a serious 3D game prototype based in surgical training, specifically, the heart transplant. 
+		The player can learn and practice the different steps of the heart transplant, including the preoperative, surgery operation, tools and machinery used. 
+		The game was designed and developed for the final thesis presented at Telecom BCN in July 2013 (more information here).
+		<br>
+		
+		<div class="info">
+		<div id="bar">Information</div>
+		<ul>
+			<li><b>Title:</b> Cirurgia 3D</li>
+			<li><b>Genre:</b> Point&Click, First Person, Serious game
+			<li><b>Developer:</b> Pol Marti Cañizares</li>
+			<li><b>Contributors:</b> Daniela Tost Pardell & BarcelonaTech (UPC)</li>
+			<li><b>Languages:</b> Catalan</li>
+			<li><b>Platform:</b> <i>Windows, Linux, MacOS</i></li>
+			<li><b>Players:</b> 1</li>
+		</ul>
+		</div>
+		
+		<div class="char">
+		<div id="bar">3D Models</div>
+		<ul>
+			<li>Operation theatre</li>
+			<li>Patient: internal and external</li>
+			<li>Tools and machinery</li>
+		</ul>
+		</div>
+		<div class="char">
+		<div id="bar">Navigation</div>
+		<ul>
+			<li>Translation</li>
+			<li>Horizontal rotation (360º)</li>
+			<li>Vertical rotation (140º)</li>
+			<li>Inclination (<i>Zoom</i>)</li>
+		</ul>
+		</div>
+	</div>
+	
+	
+	<div id="slidewrap">
+		<div id="slideshow">
+			<a href="Cirurgia3D1.jpg"><img src="Cirurgia3D1.jpg" width="500" height="300" alt="Image 1"></a>
+			<a href="Cirurgia3D2.jpg"><img src="Cirurgia3D2.jpg" width="500" height="300" alt="Image 2"></a>
+			<a href="Cirurgia3D3.jpg"><img src="Cirurgia3D3.jpg" width="500" height="300" alt="Image 3"></a>
+			<a href="Cirurgia3D4.jpg"><img src="Cirurgia3D4.jpg" width="500" height="300" alt="Image 4"></a>
+			<a href="Cirurgia3D5.jpg"><img src="Cirurgia3D5.jpg" width="500" height="300" alt="Image 5"></a>
+			<a href="Cirurgia3D6.jpg"><img src="Cirurgia3D6.jpg" width="500" height="300" alt="Image 6"></a>
+			<a href="Cirurgia3D7.jpg"><img src="Cirurgia3D7.jpg" width="500" height="300" alt="Image 7"></a>
+			<a href="Cirurgia3D8.jpg"><img src="Cirurgia3D8.jpg" width="500" height="300" alt="Image 8"></a>
+		</div>
+	<div id="navi"></div>
+	<div class="char">
+		<div id="bar">Systems</div>
+		<ul>
+			<li>Timing system</li>
+			<li>Punctuation system</li>
+			<li>Messaging system</li>
+		</ul>
+	</div>
+	<div class="char">
+		<div id="bar">GUI</div>
+		<ul>
+			<li>Visual indicators: life, time and points</li>
+			<li>Menu</li>
+			<li>Messages</li>
+		</ul>
+		</div>
+	</div>
+	
+	<script>
+	$("document").ready(function(){
+		$("#slideshow").cycle({
+		timeout: 6000,
+		speed: 2000,
+		pager:  '#navi'
+		});	
+	})
+	</script>
+	
+	<div id="barlarge"></div>
+	<p id="infocont"> <b><a href="#contact" id="link">Contact</a></b> in order to obtain more information or test the prototype<br><br>
+		All rights reserved to Pol Marti Cañizares and Universitat Politècnica de Catalunya (UPC - BarcelonaTech)
+	</div>
+
+	</div>
+</section>
+
+<section class="publications" id="publications">
+	<div id="middle">
+	<h1 class="titolgran">PUBLICATIONS</h1>
+	<div id="wrappubl">
+		<h2 id="typepubl">Published</h2>
+		<ul id="publication">
+			<li id="sec"><b id="secname">Author:</b> Pol Marti Cañizares and Daniela Tost Pardell</li>
+			<li id="sec"><b id="secname">Title:</b> Design and implementation of a 3D serious game for cardiovascular surgery training</li>
+			<li id="sec"><b id="secname">Publisher:</b> Academic papers UPC - <i>UPCommons</i></li>
+			<li id="sec"><b id="secname">Date:</b> July 3</li>
+			<li id="sec"><b id="secname">Year:</b> 2013</li>
+			<li id="sec"><b id="secname">Identifier:</b> <a href="http://upcommons.upc.edu/pfc/handle/2099.1/19580?locale=en" id="identifier">19580</a></li>
+			<li id="sec"><b id="secname">Abstract:</b>
+			The objective of this project is to develop a serious 3D game based in surgical training, specifically,
+			the heart transplant. In order to achieve this objective, we designed an abstract model of the elements involved
+			in the operation room: their appearance and the actions that they can do and receive. We proposed a logic
+			design of the game and an interaction and navigation model and finally we implemented a game prototype. 
+			The final result has been objectively assessed by the testing players, obtaining a really good
+			review of the different game sections of the prototype. The project has demonstrated the possibility of
+			implementing a 3D serious game focused on surgical training where the player can navigate in an operation
+			room environment while performing a procedural heart transplant operation.
+			</li>
+		</ul>
+		<h2 id="typepubl">Submitted / In Review</h2>
+		<ul id="publication">
+			<li id="sec"><b id="secname">Author:</b> Pol Marti Cañizares and Frithjof Kruggel</li>
+			<li id="sec"><b id="secname">Title:</b> Point Density and Surface Curvature for Semi-Transparency Rendering</li>
+			<li id="sec"><b id="secname">Publisher:</b> <a id="identifier" href="http://www.vcbm.org/">EG VCBM</a></li>
+			<li id="sec"><b id="secname">Date:</b> -</li>
+			<li id="sec"><b id="secname">Year:</b> -</li>
+			<li id="sec"><b id="secname">Identifier:</b> -</li>
+			<li id="sec"><b id="secname">Abstract:</b>
+			Stippling is an artistic technique often used in medical illustrations to represent the shape of anatomical
+			structures by point patterns of varying density. In this paper, we present a computer-based simulation of
+			this technique to render 3D semi-transparent surfaces. We use surface curvature to steer the density of the
+			point pattern, creating the illusion of a surface. Because this illusory effect is strong, the point density can
+			be kept low, interfering little the rendering of objects underneath the surface. In this way, we obtain a semitransparent
+			effect that helps understanding the relationship between an outer surface and objects contained
+			inside. We explore different parameters of the method and we show that our method is suitable for rendering
+			biomedical scenes.
+			</li>
+		</ul>
+	</div>
+	</div>
+</section>
+
+<section class="contact" id="contact">
+	<div id="middle">
+		<h1 class="titolgran">CONTACT</h1>
+		<br><br>
+		<div id="wrapcontact">
+		<a href="mailto:polmartic@gmail.com" id="email"><i class="fa fa-envelope-o"></i></a>
+		<a href="skype:polmartic?call" id="skype"><i class="fa fa-skype"></i></a>
+		</div>
+	</div>
+</section>
+
+
+
+<footer>
+
+ <div id="footnav">
+      <a href="#home">About</a> | <a href="#cv">CV</a> | <a href="#games">Games</a> | <a href="#publications">Publications</a> | <a href="#contact">Contact</a></li>
+ </div>
+
+<div id="update"><small>Last update: June 18, 2014</small></div>
+<div id="copy"><small>Copyright © 2014 Pol Marti Cañizares</small></div>
+
+</footer>
+</body>
+</html>
