@@ -168,7 +168,7 @@ nav ul{
 	margin:10px auto 0 auto;}
 
 .games{
-	height:1050px;
+	height:1800px;
 	padding:70px 0 70px 0;
 	background-color:#f2f2f2;
 }
@@ -196,19 +196,44 @@ margin: 0 0 0 25%;padding-right:40%;border-bottom:5px solid #d76817; color:#d768
 	margin:0;
 	box-shadow:0 0 0;
 }
+#slideshowCir {
+	width:500px;
+	height:300px;
+	vertical-align:middle;
+	margin: 20px 0 15px 0;
+}
+
+#slideshowCir  img{
+	margin:0;
+	box-shadow:0 0 0;
+}
 #navi {width:500px;border-top:1px solid #dadada;margin: 0 auto 64px auto; height:80px;text-align:center;padding-bottom:40px;}
 #navi a {text-decoration: none; padding-bottom: 60px; color: rgba(0, 0, 0, 0);margin:10px 4px 0px 4px;
 	padding-left:100px;font-size:0;overflow:hidden;display:inline-block;}
-#navi a:nth-child(1){background-image: url('../img/Cirurgia3D1.jpg');opacity:0.3; background-size: 100px 60px;}
-#navi a:nth-child(2){background-image: url('../img/Cirurgia3D2.jpg');opacity:0.3; background-size: 100px 60px;}
-#navi a:nth-child(3){background-image: url('../img/Cirurgia3D3.jpg');opacity:0.3; background-size: 100px 60px;}
-#navi a:nth-child(4){background-image: url('../img/Cirurgia3D4.jpg');opacity:0.3; background-size: 100px 60px;}
-#navi a:nth-child(5){background-image: url('../img/Cirurgia3D5.jpg');opacity:0.3; background-size: 100px 60px;}
-#navi a:nth-child(6){background-image: url('../img/Cirurgia3D6.jpg');opacity:0.3; background-size: 100px 60px;}
-#navi a:nth-child(7){background-image: url('../img/Cirurgia3D7.jpg');opacity:0.3; background-size: 100px 60px;}
-#navi a:nth-child(8){background-image: url('../img/Cirurgia3D8.jpg');opacity:0.3; background-size: 100px 60px;}
+#navi a:nth-child(1){background-image: url('../img/menu.png');opacity:0.3; background-size: 100px 60px;}
+#navi a:nth-child(2){background-image: url('../img/colors_text.png');opacity:0.3; background-size: 100px 60px;}
+#navi a:nth-child(3){background-image: url('../img/options.png');opacity:0.3; background-size: 100px 60px;}
+#navi a:nth-child(4){background-image: url('../img/amunt_text.png');opacity:0.3; background-size: 100px 60px;}
+#navi a:nth-child(5){background-image: url('../img/abaix_text.png');opacity:0.3; background-size: 100px 60px;}
+#navi a:nth-child(6){background-image: url('../img/abaixsalt_text.png');opacity:0.3; background-size: 100px 60px;}
+#navi a:nth-child(7){background-image: url('../img/tutjump.png');opacity:0.3; background-size: 100px 60px;}
+#navi a:nth-child(8){background-image: url('../img/tutreverse.png');opacity:0.3; background-size: 100px 60px;}
 #navi a.activeSlide {opacity:1;  border: 0px solid #d76817;}
 #navi a:focus { outline: none; }
+
+#naviCir {width:500px;border-top:1px solid #dadada;margin: 0 auto 64px auto; height:80px;text-align:center;padding-bottom:40px;}
+#naviCir a {text-decoration: none; padding-bottom: 60px; color: rgba(0, 0, 0, 0);margin:10px 4px 0px 4px;
+	padding-left:100px;font-size:0;overflow:hidden;display:inline-block;}
+#naviCir a:nth-child(1){background-image: url('../img/Cirurgia3D1.jpg');opacity:0.3; background-size: 100px 60px;}
+#naviCir a:nth-child(2){background-image: url('../img/Cirurgia3D2.jpg');opacity:0.3; background-size: 100px 60px;}
+#naviCir a:nth-child(3){background-image: url('../img/Cirurgia3D3.jpg');opacity:0.3; background-size: 100px 60px;}
+#naviCir a:nth-child(4){background-image: url('../img/Cirurgia3D4.jpg');opacity:0.3; background-size: 100px 60px;}
+#naviCir a:nth-child(5){background-image: url('../img/Cirurgia3D5.jpg');opacity:0.3; background-size: 100px 60px;}
+#naviCir a:nth-child(6){background-image: url('../img/Cirurgia3D6.jpg');opacity:0.3; background-size: 100px 60px;}
+#naviCir a:nth-child(7){background-image: url('../img/Cirurgia3D7.jpg');opacity:0.3; background-size: 100px 60px;}
+#naviCir a:nth-child(8){background-image: url('../img/Cirurgia3D8.jpg');opacity:0.3; background-size: 100px 60px;}
+#naviCir a.activeSlide {opacity:1;  border: 0px solid #d76817;}
+#naviCir a:focus { outline: none; }
 
 .publications{
 	height:1000px;
