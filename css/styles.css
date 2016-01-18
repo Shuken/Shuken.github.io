@@ -90,11 +90,24 @@ nav ul{
 
 #wrapprepho{height:300px;margin-top:20px;}
 #presentation{display:inline-block;width:38%;vertical-align:top;margin-left:10%;margin-right:5%;text-align:justify;}
-#photowrap{display:inline-block;width:40%;vertical-align:top;padding-top:40px;}
-#photo1{ border: 8px solid white; border-bottom: 30px solid white;margin:0 0;-webkit-transform:rotate(7deg);-ms-transform:rotate(7deg); }
+#photowrap{display:inline-block;width:40%;vertical-align:middle;padding-top:40px;}
+/*#photo1{ border: 8px solid white; border-bottom: 30px solid white;margin:0 0;-webkit-transform:rotate(7deg);-ms-transform:rotate(7deg); }
 #photo2{ border: 8px solid white; border-bottom: 30px solid white;margin:0 0;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg); }
 #photo3{ border: 8px solid white; border-bottom: 30px solid white;margin:0 0;-webkit-transform:rotate(-15deg);-ms-transform:rotate(-15deg); }
-#photo4{ border: 8px solid white; border-bottom: 30px solid white;margin:0 0;-webkit-transform:rotate(5deg);-ms-transform:rotate(5deg); }
+#photo4{ border: 8px solid white; border-bottom: 30px solid white;margin:0 0;-webkit-transform:rotate(5deg);-ms-transform:rotate(5deg); }*/
+#photo1{
+	width:300px;
+	height:auto;
+	border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 0px;
+    display: block;
+    margin: 0 auto 0 auto;
+    float: none;
+}
+
 
 .home article{
 	margin-top: 100px;
