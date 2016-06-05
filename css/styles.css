@@ -75,6 +75,10 @@ nav ul{
 	list-style-type:none;
 }
 
+.cv #middle{
+	text-align: center;
+}
+
 #middle{
 	width:1248px;
 	margin:0 auto 0 auto;
@@ -118,7 +122,7 @@ nav ul{
 
 .cv{
 	background:#dadada;
-	height:450px;
+	height:350px;
 	padding:70px 0 70px 0;
 }
 
@@ -131,39 +135,10 @@ nav ul{
 	text-align:center;
 }
 
-.cvleft{
-	height:50%;
-	width:20%;
-	display:inline-block;
-	margin: 0 0 0 26%;
-	font-weight:400; 
-	font-size:150%;
-	font-weight:400;
-	color:#d76817;
-	text-align:center;
-}
-
-.cvmidl{
-	height:250px;
-	width:3%;
-	display:inline-block;
-	color:#d76817;
-	border-right: 2px dotted #00a6b6;
-}
-
-.cvmidr{
-	height:50%;
-	width:3%;
-	display:inline-block;
-	font-size:150%; 
-	color:#d76817; 
-}
-
 .cvright{
 	height:50%;
 	width:20%;
 	display:inline-block;
-	margin: 0 26% 0 0;
 	font-weight:400; 
 	font-size:150%; 
 	color:#d76817; 
@@ -171,8 +146,15 @@ nav ul{
 	font-weight:400;
 }
 
-.cvdoc{width:40%;margin:23% 30% 0 0;box-shadow: 0px 0px 0px;}
-.cvin{width:55%;margin:25% 18% 0 0;box-shadow: 0px 0px 0px;}
+.cvin{
+	width:55%;
+	box-shadow: 0px 0px 0px;
+	-webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
 
 #circle{border-radius: 50%;
 	width: 200px;
