@@ -12,15 +12,17 @@ const getToken = async () => {
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-fetch-dest": "empty",
-      "sec-fetch-site": "cross-site"
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "cross-site",
+	  "access-control-allow-origin" : "*"
     },
     referrer: "https://es.webuy.com/user/account?tab=sales&page=1&slotName=activo",
     referrerPolicy: "no-referrer-when-downgrade",
     body: "client_id=cexweb&client_secret=18733fb8b6aa2bcbf17a2d0eba7483e6&grant_type=refresh_token&refresh_token=96b99c25f7a9335df001281a41866e85fef151bb",
     method: "POST",
+    mode: "cors",
     credentials: "omit"
   });
-  
   
   if (!response.ok) {
     throw new Error("Failed to fetch token");
