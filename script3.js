@@ -12,7 +12,7 @@ const getToken = async () => {
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
+      "sec-fetch-mode": "no-cors",
       "sec-fetch-site": "cross-site",
 	  "access-control-allow-origin" : "*"
     },
@@ -20,7 +20,7 @@ const getToken = async () => {
     referrerPolicy: "no-referrer-when-downgrade",
     body: "client_id=cexweb&client_secret=18733fb8b6aa2bcbf17a2d0eba7483e6&grant_type=refresh_token&refresh_token=1e780a1e921935b03bba291876bbf5af9403fff6",
     method: "POST",
-    mode: "cors",
+    mode: "no-cors",
     credentials: "omit"
   });
   
