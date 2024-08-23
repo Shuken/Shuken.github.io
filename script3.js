@@ -12,7 +12,7 @@ const getToken = async () => {
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
+      "sec-fetch-mode": "no-cors",
       "sec-fetch-site": "cross-site"
     },
     referrer: "https://es.webuy.com/user/account?tab=sales&page=1&slotName=activo",
