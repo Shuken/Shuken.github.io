@@ -18,7 +18,7 @@ const getToken = async () => {
     },
     referrer: "https://es.webuy.com/user/account?tab=sales&page=1&slotName=activo",
     referrerPolicy: "no-referrer-when-downgrade",
-    body: "client_id=cexweb&client_secret=18733fb8b6aa2bcbf17a2d0eba7483e6&grant_type=refresh_token&refresh_token=96b99c25f7a9335df001281a41866e85fef151bb",
+    body: "client_id=cexweb&client_secret=18733fb8b6aa2bcbf17a2d0eba7483e6&grant_type=refresh_token&refresh_token=1e780a1e921935b03bba291876bbf5af9403fff6",
     method: "POST",
     mode: "cors",
     credentials: "omit"
@@ -34,11 +34,9 @@ const getToken = async () => {
 };
 
 const getElements = async () => {
-  /*if (!token || Date.now() >= tokenExpiry) {
+  if (!token || Date.now() >= tokenExpiry) {
     await getToken();
-  }*/
-  
-  token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZCI6IjQ1YmUzZDc4OGU2OTgyNzUzYjU0MWQ5Y2IyYjVhZWI3NTA5MzFlMjQiLCJqdGkiOiI0NWJlM2Q3ODhlNjk4Mjc1M2I1NDFkOWNiMmI1YWViNzUwOTMxZTI0IiwiaXNzIjoiIiwiYXVkIjoiY2V4d2ViIiwic3ViIjoiY2V4LWVzLTk1OTgyIiwiZXhwIjoxNzI0NDE1MzgwLCJpYXQiOjE3MjQ0MTUzNTAsInRva2VuX3R5cGUiOiJiZWFyZXIiLCJzY29wZSI6bnVsbH0.IDLT2PcmQUmKY4Bswq_T60XX0L1xulvybtqb1vDkYzjzsGdhja895Lo7krciwWWPJAOBuAX4gzQDHLats0PzuYurdKYKzbQ4iryfjIArd6XUEG6qkfDXpqBMPUiV5EvBJobh2KllCBpYeoI2ijtqcXPaRz_Wy1A_3ivWJVTlVdz4YlNy9cWfNROZBE1jOJWtYodmfQfiW8CQ0nNRo9GuGGs509B9T6J_BiMM_d6Qz3hryo439pzhW0uOT8ZiN4uQT5YCkcVhMkLjl_ggaXnYgQJ_vMiKoH8fKhKtLjMGnHauk3Zu8DFVkDV9sVpYwGdKTMDaJjetKc1hrKjx3_7MlA"
+  }
 
   const response = await fetch("https://wss2.cex.es.webuy.io/v3/members/408026/favouriteboxes?accessToken=${token}&firstRecord=1&count=6&sortBy=favouriteBoxAddedTime&sortOrder=desc", {
     headers: {
@@ -50,8 +48,7 @@ const getElements = async () => {
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-fetch-dest": "empty",
       "sec-fetch-mode": "cors",
-      "sec-fetch-site": "cross-site",
-	  "access-control-allow-origin" : "*"
+      "sec-fetch-site": "cross-site"
     },
     referrer: "https://es.webuy.com/user/account?tab=favourites&page=1&sortBy=most-recent",
     referrerPolicy: "no-referrer-when-downgrade",
