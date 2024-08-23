@@ -18,12 +18,12 @@ const getToken = async () => {
     },
     referrer: "https://es.webuy.com/user/account?tab=sales&page=1&slotName=activo",
     referrerPolicy: "no-referrer-when-downgrade",
-    body: "client_id=cexweb&client_secret=18733fb8b6aa2bcbf17a2d0eba7483e6&grant_type=refresh_token&refresh_token=1e780a1e921935b03bba291876bbf5af9403fff6",
+    body: "client_id=cexweb&client_secret=18733fb8b6aa2bcbf17a2d0eba7483e6&grant_type=refresh_token&refresh_token=27fdd577b666a433922c91443b9dafe92534ab4d",
     method: "POST",
     mode: "no-cors",
     credentials: "omit"
   });
-  
+  console.log(response);
   if (!response.ok) {
     throw new Error("Failed to fetch token");
   }
