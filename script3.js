@@ -34,9 +34,9 @@ const getToken = async () => {
 };
 
 const getElements = async () => {
-  if (!token || Date.now() >= tokenExpiry) {
+  /*if (!token || Date.now() >= tokenExpiry) {
     await getToken();
-  }
+  }*/
 
   const response = await fetch("https://wss2.cex.es.webuy.io/v3/members/408026/favouriteboxes?accessToken=${token}&firstRecord=1&count=6&sortBy=favouriteBoxAddedTime&sortOrder=desc", {
     headers: {
