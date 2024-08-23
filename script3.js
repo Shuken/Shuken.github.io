@@ -19,7 +19,7 @@ const getToken = async () => {
     referrerPolicy: "no-referrer-when-downgrade",
     body: "client_id=cexweb&client_secret=18733fb8b6aa2bcbf17a2d0eba7483e6&grant_type=refresh_token&refresh_token=96b99c25f7a9335df001281a41866e85fef151bb",
     method: "POST",
-    mode: "cors",
+    mode: "no-cors",
     credentials: "omit"
   });
   
