@@ -48,7 +48,8 @@ const getElements = async () => {
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-fetch-dest": "empty",
       "sec-fetch-mode": "cors",
-      "sec-fetch-site": "cross-site"
+      "sec-fetch-site": "cross-site",
+	  "access-control-allow-origin" : "*"
     },
     referrer: "https://es.webuy.com/user/account?tab=favourites&page=1&sortBy=most-recent",
     referrerPolicy: "no-referrer-when-downgrade",
