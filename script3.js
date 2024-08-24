@@ -1,5 +1,6 @@
 let token = null;
 let tokenExpiry = 0;
+let refreshToken = bf5c17925c11161259902fc2a4e54653115da919;
 
 const getToken = async () => {
   const response = await fetch("https://oauth2.cex.es.webuy.io/token", {
@@ -17,7 +18,7 @@ const getToken = async () => {
   },
   "referrer": "https://es.webuy.com/user/account?tab=sales&page=1&slotName=activo",
   "referrerPolicy": "no-referrer-when-downgrade",
-  "body": "client_id=cexweb&client_secret=18733fb8b6aa2bcbf17a2d0eba7483e6&grant_type=refresh_token&refresh_token=6fae10047693fac64962cb0f2f1a0246d4286f89",
+  "body": "client_id=cexweb&client_secret=18733fb8b6aa2bcbf17a2d0eba7483e6&grant_type=refresh_token&refresh_token=" + refreshToken,
   "method": "POST",
   "mode": "cors",
   "credentials": "omit"
@@ -29,6 +30,7 @@ const getToken = async () => {
 
   const data = await response.json();
   token = data.access_token;
+  refreshToken = data.refresh_token;
   tokenExpiry = Date.now() + 30000; // Token expiry set to 30 seconds from now
 };
 
@@ -37,7 +39,7 @@ const getElements = async () => {
     await getToken();
   }
 
-  const response = await fetch("https://wss2.cex.es.webuy.io/v3/members/408026/favouriteboxes?accessToken=${token}&firstRecord=1&count=6&sortBy=favouriteBoxAddedTime&sortOrder=desc", {
+  const response = await fetch("https://wss2.cex.es.webuy.io/v3/members/408026/favouriteboxes?accessToken=" + token + "&firstRecord=1&count=6&sortBy=favouriteBoxAddedTime&sortOrder=desc", {
     headers: {
       "accept": "application/json, text/plain, */*",
       "accept-language": "es-ES,es;q=0.9,ca;q=0.8,en;q=0.7",
@@ -62,6 +64,7 @@ const getElements = async () => {
   }
 
   const data = await response.json();
+  console.log(data);
   return data;
 };
 
