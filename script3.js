@@ -1,6 +1,6 @@
 let token = null;
 let tokenExpiry = 0;
-let refreshToken = "bf5c17925c11161259902fc2a4e54653115da919";
+let refreshToken = "5694bffc12418dfb15da6540937745f0e2d6aba6";
 
 const getToken = async () => {
   const response = await fetch("https://oauth2.cex.es.webuy.io/token", {
