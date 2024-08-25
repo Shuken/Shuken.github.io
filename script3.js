@@ -30,6 +30,7 @@ const getToken = async () => {
 
   const data = await response.json();
   token = data.access_token;
+  console.log(token);
   refreshToken = data.refresh_token;
   tokenExpiry = Date.now() + 30000; // Token expiry set to 30 seconds from now
 };
@@ -39,7 +40,7 @@ const getElements = async () => {
     await getToken();
   }
 
-  const response = await fetch("https://wss2.cex.es.webuy.io/v3/members/408026/favouriteboxes?accessToken=" + token + "&firstRecord=1&count=6&sortBy=favouriteBoxAddedTime&sortOrder=desc", {
+  const response = await fetch("https://wss2.cex.es.webuy.io/v3/members/408026/favouriteboxes?accessToken=" + token.toString() + "&firstRecord=1&count=6&sortBy=favouriteBoxAddedTime&sortOrder=desc", {
     headers: {
       "accept": "application/json, text/plain, */*",
       "accept-language": "es-ES,es;q=0.9,ca;q=0.8,en;q=0.7",
