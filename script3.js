@@ -53,7 +53,7 @@ const getElements = async () => {
   "method": "GET",
   "mode": "cors",
   "credentials": "omit"
-});
+  });
   
   console.log(response);
   const data = await response.json();
@@ -63,8 +63,8 @@ const getElements = async () => {
     throw new Error("Failed to fetch elements");
   }
 
-  const data = await response.json();
-  console.log(data);
+  /*const data = await response.json();
+  console.log(data);*/
   return data;
 };
 
